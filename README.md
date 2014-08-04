@@ -81,9 +81,20 @@ var options = {
 console.log(prettyjson.render(data, options));
 ```
 
+this version will not output like yaml style, but JSON style in a more friendly readable format
 And will output:
 
-![Example 4](https://raw.github.com/rafeca/prettyjson/master/images/example1.png)
+```javascript
+{
+  "username":  "rafeca",
+  "url":  "https://github.com/rafeca",
+  "twitter_account":  "https://twitter.com/rafeca",
+  "projects":   [
+     "prettyprint",
+     "connfu"
+  ]
+}
+```
 
 You can also configure the colors of the hash keys and array dashes
 (using [colors.js](https://github.com/Marak/colors.js) colors syntax):
